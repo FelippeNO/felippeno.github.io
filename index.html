@@ -1,106 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Felippe Negrão de Oliveira</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <header class="header-wrapper">
-        <div class="header">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-items">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="#">Projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+      <div class="header">
+        <div class="checkbox-container">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="toggle" />
+            <label class="checkbox" for="toggle">
+              <div class="trace"></div>
+              <div class="trace"></div>
+              <div class="trace"></div>
+            </label>
+            <div class="menu"></div>
+            <nav class="menu-items">
+              <ul>
+                <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                  <a href="/sobre.html">Sobre</a>
+                </li>
+                <li>
+                  <a href="/exp.html">Experiência</a>
+                </li>
+                <li>
+                  <a href="/projetos.html">Projetos</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <h1>Felippe Negrão de Oliveira</h1>
-        <h2>Front-end and Mobile Developer</h2>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/felippenegrao/">Linkedin</a>
-            <a href="https://github.com/FelippeNO">Github</a>
-        </div>
+      </div>
+      <h1 class="name">Felippe Negrão de Oliveira</h1>
+      <h2 class="title">Front-end and Mobile Developer</h2>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/felippenegrao/">Linkedin</a>
+        <a href="https://github.com/FelippeNO">Github</a>
+      </div>
     </header>
-    <div class="container">
-        <div class="card-container">
-            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio
-                nihil, culpa repudiandae atque facilis eveniet neque
-                consequuntur quas dolorem aliquam maiores nulla ullam optio fugit voluptatibus soluta? Nulla, ipsum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio nihil, culpa
-                repudiandae atque facilis eveniet neque
-                consequuntur quas dolorem aliquam maiores nulla ullam optio fugit voluptatibus soluta? Nulla, ipsum.
-            </div>
-            <div class="github">
-                <div class="card">
-
-                    <div class="card-wrapper">
-                        <h2>GitHub</h2>
-                        <p>Veja meus projetos!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-container">
-            <div class="linkedin">
-                <div class="card">
-                    <div class="card-wrapper">
-                        <h2>Linkedin</h2>
-                        <p>Vem ver minha carreira profissional!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio
-                nihil, culpa repudiandae atque facilis eveniet neque
-                consequuntur quas dolorem aliquam maiores nulla ullam optio fugit voluptatibus soluta? Nulla, ipsum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio nihil, culpa
-                repudiandae atque facilis eveniet neque
-                consequuntur quas dolorem aliquam maiores nulla ullam optio fugit voluptatibus soluta? Nulla, ipsum.
-            </div>
-
-        </div>
-
-        <div class="card-container">
-            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio
-                nihil, culpa repudiandae atque facilis eveniet neque
-                consequuntur quas dolorem aliquam maiores nulla ullam optio fugit voluptatibus soluta? Nulla, ipsum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio nihil, culpa
-                repudiandae atque facilis eveniet neque
-                consequuntur quas dolorem aliquam maiores nulla ullam optio fugit voluptatibus soluta? Nulla, ipsum.
-            </div>
-            <div class="instagram">
-                <div class="card">
-                    <div class="card-wrapper">
-                        <h2>Instagram</h2>
-                        <p>Ou mais do meu dia-a-dia ;)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="counter-container">
+      <p style="color: black">Contador em JavaScript</p>
+      <div id="counter">
+        <button name="subtrair" onclick="decrement()">-</button>
+        <span id="currentNumber">0</span>
+        <button name="adicionar" onclick="increment()">+</button>
+      </div>
+      <script src="index.js"></script>
     </div>
-    <footer class="footer">
-        Created by Felippe Negrão
-    </footer>
-</body>
+    <div class="container">
+      <div class="card-container">
+        <div class="card-text">
+          Acompanhe meus projetos no GitHub! Mais de 30 repositórios
+          demonstrando minhas habilidades nas mais variadas stacks.
+        </div>
+        <a href="https://github.com/FelippeNO">
+          <div class="github">
+            <div class="card">
+              <div class="card-wrapper">
+                <h2>GitHub</h2>
+                <p>Veja meus projetos!</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-container">
+        <a href="https://www.linkedin.com/in/felippenegrao/">
+          <div class="linkedin">
+            <div class="card">
+              <div class="card-wrapper">
+                <h2>Linkedin</h2>
+                <p>Vem ver minha carreira profissional!</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="card-text">
+          Perfil profissional completo, com as experiências adquiridas ao longo
+          do tempo. Me chame para um bate-papo, ou até se precisar de ajuda em
+          algo em que eu possa ajudar.
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card-text">
+          Minha vida mais de perto. O que eu faço no meu dia-a-dia e o como eu
+          me interajo com as pessoas à minha volta. Me segue lá, às vezes
+          compartilho coisas sobre programação.
+        </div>
+        <a href="http://instagram.com/felippeno">
+          <div class="instagram">
+            <div class="card">
+              <div class="card-wrapper">
+                <h2>Instagram</h2>
+                <p>Ou mais do meu dia-a-dia ;)</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer class="footer">Created by Felippe Negrão</footer>
+  </body>
+</html>
