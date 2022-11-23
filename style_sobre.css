@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 
-
-
-* {
-    font-family: 'Open Sans', sans-serif;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -13,38 +7,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
-/* CONTADOR */
-
-button {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid #454545;
-    background-color: #00a5a5;
-    color:#3d3d3d;
-    font-size: 16pt;
-    font-weight: 600;
-    text-align: center;
-}
-
-#counter {
-    display: flex;
-}
-
-#currentNumber {
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-    font-size: 16pt;
-    color: #00a5a5;
-}
-
-
 /* HEADER */
 
 .header-wrapper {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     background: linear-gradient(-45deg, #050404, #00343d, #00a5a5, #32c5ff);
     background-size: 400% 400%;
@@ -242,87 +208,43 @@ a:hover {
     margin: 3rem 0;
 }
 
-.card-container {
+.container h1 {
+color: black;
+}
+
+
+.card-container-text {
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 90%;
+    width: 50%;
+    flex-direction: column;
 }
 
-.counter-container {
-    margin-top: 10px;
+.card-container-image {
+    display: block;
+    width: 20vh;
+    height: 20vh;
+    background-color:coral;
+    border-radius: 50%;
+    background-image: url('me.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-container {
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-
-.github {
-    height: 300px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./Capturadetela2022-04-19085358.png');
-}
-
-.linkedin {
-    height: 300px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-
-    background-image: url('./Capturadetela2022-04-19085358.png');
-}
-
-.instagram {
-    height: 400px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./instagram-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(0.5);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.linkedin {
-    height: 400px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./linkedin-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(0.5);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.github {
-    height: 400px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./github-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(0.5);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+.card-container-text p {
+text-align: justify;
 }
 
 
@@ -370,29 +292,6 @@ a:hover {
     transition: 0.3s;
 }
 
-.instagram:hover {
-    filter: unset;
-}
-
-.linkedin:hover {
-    filter: unset;
-}
-
-.github:hover {
-    filter: unset;
-}
-
-.card:hover>.card-wrapper::before {
-    height: 250px;
-    width: 350px;
-    opacity: 1;
-}
-
-.card:hover>.card-wrapper p {
-    opacity: 1;
-    visibility: visible;
-    font-size: 14px;
-}
 
 /* FOOTER */
 
@@ -429,6 +328,51 @@ a:hover {
         width: 250px;
     }
 
+    .card-text {
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover>.card-wrapper::before {
+        height: 190px;
+        width: 190px;
+    }
+
+    .header-wrapper {
+        padding-top: 40px;
+        height: 30vh;
+    }
+
+
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 0.3rem 2rem;
+    border: 1px solid #ffffff;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+    .body-container {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-direction: column;
+    }
+
     .name  {
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -441,14 +385,12 @@ a:hover {
         font-size: 10px;
     }
 
-    .card-text {
-        width: 90%;
-        margin-top: 2rem;
-        text-align: center;
-    }
-
-    .card:hover>.card-wrapper::before {
-        height: 190px;
-        width: 190px;
+    .card-container-text {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        flex-direction: column;
     }
 }

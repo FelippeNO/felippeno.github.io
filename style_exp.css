@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 
-
-
-* {
-    font-family: 'Open Sans', sans-serif;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -13,38 +7,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
-/* CONTADOR */
-
-button {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid #454545;
-    background-color: #00a5a5;
-    color:#3d3d3d;
-    font-size: 16pt;
-    font-weight: 600;
-    text-align: center;
-}
-
-#counter {
-    display: flex;
-}
-
-#currentNumber {
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-    font-size: 16pt;
-    color: #00a5a5;
-}
-
-
 /* HEADER */
 
 .header-wrapper {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     background: linear-gradient(-45deg, #050404, #00343d, #00a5a5, #32c5ff);
     background-size: 400% 400%;
@@ -242,96 +208,19 @@ a:hover {
     margin: 3rem 0;
 }
 
+.container h1 {
+color: black;
+}
+
+
 .card-container {
+    color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90%;
-}
-
-.counter-container {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    align-items: start;
     flex-direction: column;
+    width: 50%;
 }
 
-
-.github {
-    height: 300px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./Capturadetela2022-04-19085358.png');
-}
-
-.linkedin {
-    height: 300px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-
-    background-image: url('./Capturadetela2022-04-19085358.png');
-}
-
-.instagram {
-    height: 400px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./instagram-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(0.5);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.linkedin {
-    height: 400px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./linkedin-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(0.5);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.github {
-    height: 400px;
-    width: 400px;
-    margin: 3rem 0 0 0;
-    background-image: url('./github-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(0.5);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-.card-text {
-    width: 40%;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    color: rgb(109, 109, 109);
-}
 
 .card-wrapper {
     text-align: center;
@@ -340,17 +229,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.card-wrapper::before {
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.3s;
 }
 
 .card-wrapper h2 {
@@ -368,30 +246,6 @@ a:hover {
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
-}
-
-.instagram:hover {
-    filter: unset;
-}
-
-.linkedin:hover {
-    filter: unset;
-}
-
-.github:hover {
-    filter: unset;
-}
-
-.card:hover>.card-wrapper::before {
-    height: 250px;
-    width: 350px;
-    opacity: 1;
-}
-
-.card:hover>.card-wrapper p {
-    opacity: 1;
-    visibility: visible;
-    font-size: 14px;
 }
 
 /* FOOTER */
@@ -424,9 +278,46 @@ a:hover {
         flex-direction: column-reverse;
     }
 
+
+    .header-wrapper {
+        padding-top: 40px;
+        height: 30vh;
+    }
+
+
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 0.3rem 2rem;
+    border: 1px solid #ffffff;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
     .card {
         height: 250px;
         width: 250px;
+    }
+
+    .card-text {
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover>.card-wrapper::before {
+        height: 190px;
+        width: 190px;
     }
 
     .name  {
@@ -441,14 +332,14 @@ a:hover {
         font-size: 10px;
     }
 
-    .card-text {
-        width: 90%;
-        margin-top: 2rem;
-        text-align: center;
-    }
 
-    .card:hover>.card-wrapper::before {
-        height: 190px;
-        width: 190px;
-    }
+.card-container {
+    color: black;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 70%;
+    text-align: justify;
+}
+
 }
